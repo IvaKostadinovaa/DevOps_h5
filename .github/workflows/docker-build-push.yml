@@ -18,8 +18,12 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build Docker image
-        run: docker build -t yourdockerhubusername/github-actions-image:latest .
 
+
+
+
+      - name: Build Docker image
+        run: docker build -t ivakostadinovaa/github-actions-image:latest .
+        
       - name: Push Docker image
-        run: docker push yourdockerhubusername/github-actions-image:latest
+        run: docker push ivakostadinovaa/github-actions-image:latest
