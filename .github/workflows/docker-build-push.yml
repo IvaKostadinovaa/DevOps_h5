@@ -23,7 +23,7 @@ jobs:
 
 
       - name: Build Docker image
-        run: docker build -t ivakostadinovaa/github-actions-image:latest .
+        run: docker build -t ivakostadinova/devops_h5: latest .
         
       - name: Push Docker image
-        run: docker push ivakostadinovaa/github-actions-image:latest
+        run: docker push ivakostadinova/devops_h5:latest
